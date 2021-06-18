@@ -12,4 +12,5 @@ fun evaluateGuess(secret: String, guess: String): Evaluation {
             wrongPosition++
         }
     }
+    return Evaluation(rightPosition, wrongPosition)
 }
