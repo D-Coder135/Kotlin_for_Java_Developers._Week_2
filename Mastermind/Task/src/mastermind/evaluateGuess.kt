@@ -7,6 +7,8 @@ fun evaluateGuess(secret: String, guess: String): Evaluation {
     var wrongPosition = 0
     for (index in guess.indices) {
         if (guess[index] == secret[index]) {
+            rightPosition++
         }
     }
+
 }
