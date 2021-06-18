@@ -3,8 +3,8 @@ files:
 - name: src/mastermind/evaluateGuess.kt
   visible: true
   placeholders:
-  - offset: 158
-    length: 127
+  - offset: 154
+    length: 149
     placeholder_text: TODO()
     initial_state:
       length: 6
