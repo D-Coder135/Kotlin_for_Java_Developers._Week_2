@@ -6,7 +6,7 @@ fun evaluateGuess(secret: String, guess: String): Evaluation {
     var rightPosition = 0
     var wrongPosition = 0
     val secretArray = secret.toMutableList()
-    var guessArray = guess.toMutableList()
+    val guessArray = guess.toMutableList()
     var secretCopy = secret
     var guessCopy = guess
     for (index in guess.indices) {
