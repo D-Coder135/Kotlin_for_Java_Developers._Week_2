@@ -10,9 +10,9 @@ fun evaluateGuess(secret: String, guess: String): Evaluation {
     var secretCopy = secret
     var guessCopy = guess
     for (index in guess.indices) {
-        if (guess[index] == secret[index]) {
+        if (guessCopy[index] == secretCopy[index]) {
             rightPosition++
-        } else if (guess[index] != secret[index] && guess[index] in secretArray) {
+        } else if (guessCopy[index] != secretCopy[index] && guessCopy[index] in secretArray) {
             wrongPosition++
         }
     }
