@@ -9,7 +9,7 @@ fun evaluateGuess(secret: String, guess: String): Evaluation {
     for (index in guess.indices) {
         if (guess[index] == secret[index]) {
             rightPosition++
-        } else if (guess[index] != secret[index] && guess[index] in secret.subSequence(0, secret.length)) {
+        } else if (guess[index] != secret[index] && guess[index] in secretArray) {
             wrongPosition++
         }
     }
