@@ -7,6 +7,7 @@ fun evaluateGuess(secret: String, guess: String): Evaluation {
     var wrongPosition = 0
     val secretArray = secret.toCharArray()
     var secretCopy = secret
+    var guessCopy = guess
     for (index in guess.indices) {
         if (guess[index] == secret[index]) {
             rightPosition++
