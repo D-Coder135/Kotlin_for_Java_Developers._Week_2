@@ -5,7 +5,7 @@ data class Evaluation(val rightPosition: Int, val wrongPosition: Int)
 fun evaluateGuess(secret: String, guess: String): Evaluation {
     var rightPosition = 0
     var wrongPosition = 0
-    val secretArray = secret.toCharArray()
+    val secretArray = secret.toMutableList()
     var guessArray = guess.toMutableList()
     var secretCopy = secret
     var guessCopy = guess
