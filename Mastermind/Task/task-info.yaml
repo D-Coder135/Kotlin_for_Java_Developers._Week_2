@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 154
-    length: 365
+    length: 408
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 158
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
   text: |
     package mastermind
 
@@ -257,5 +257,10 @@ files:
   visible: false
   learner_created: false
 feedback_link: https://www.coursera.org/learn/kotlin-for-java-developers/programming/vmwVT/mastermind-game/discussions
-status: Unchecked
+status: Failed
+feedback:
+  message: Wrong evaluation for secret=ABCD, guess=EAAA
+  time: Fri, 18 Jun 2021 18:29:38 UTC
+  expected: Evaluation(rightPosition=0, wrongPosition=1)
+  actual: Evaluation(rightPosition=0, wrongPosition=3)
 record: -1
